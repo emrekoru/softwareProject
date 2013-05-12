@@ -37,5 +37,6 @@ int main(){
             pthread_join(thread[i],NULL);
         }
 
+
   return 0;
 }
