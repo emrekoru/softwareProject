@@ -7,7 +7,7 @@
 
 using namespace std;
 
-typedef struct {
+struct protoFormat{
   char* message = "ProtocolMessage";
   char* senderIP = "127.0.0.1";
   char* receiverIP = "127.0.0.1";
@@ -50,8 +50,6 @@ int main(){
     scanf("%d", &numberOfThreads);
 
     pthread_t threads[numberOfThreads];
-
-    protocolFormat format;
 
     for(int i=0; i<numberOfThreads;i++)
         {
